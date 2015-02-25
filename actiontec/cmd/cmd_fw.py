@@ -14,7 +14,7 @@ def get_active_policy(fwcfg):
     return active_policy[1]
 
 def handle_show(at, cfg, opts):
-    logging.info('showing firewall configuraiton')
+    logging.info('showing firewall configuration')
 
     p = confparser.Parser()
     res,out = at.run('conf print net_obj')
